@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan Balaji | MS Data Science Graduate & Published AI Researcher</title>
+    <meta name="description" content="MS Data Science graduate with 4.0 GPA specializing in VQA systems, LLMs, and AI research. Research Assistant with published work at ACL 2025.">
+    <meta name="keywords" content="Data Science, Machine Learning, AI Research, LLM, VQA, Python, SQL, Portfolio">
+    <meta name="author" content="Sudarshan Balaji">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Segoe Print Font (system font) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+        .font-print {
+            font-family: 'Fragment Mono', 'Caveat', monospace, sans-serif;
+        }
+    </style>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                        accent: '#6366f1',
+                        dark: '#0a0a0a',
+                        darker: '#000000',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        code: ['Fira Code', 'monospace'],
+                        print: ['"Segoe Print"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/80 backdrop-blur-sm z-50 shadow-lg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold gradient-text font-print">Sudarshan.</a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-slate-200 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#news" class="nav-link">News</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#publications" class="nav-link">Publications</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/90 rounded-lg">
+                    <a href="#home" class="block py-2 nav-link active">Home</a>
+                    <a href="#about" class="block py-2 nav-link">About</a>
+                    <a href="#news" class="block py-2 nav-link">News</a>
+                    <a href="#skills" class="block py-2 nav-link">Skills</a>
+                    <a href="#projects" class="block py-2 nav-link">Projects</a>
+                    <a href="#publications" class="block py-2 nav-link">Publications</a>
+                    <a href="#contact" class="block py-2 nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 relative overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <div class="animate-fade-up">
+                    <h1 class="text-4xl md:text-3xl font-bold mb-4">
+                        Hi, I'm 
+                    </h1>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="gradient-text">Sudarshan Balaji</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-slate-300">
+                        MS Data Science Graduate | AI & ML Enthusiast
+                    </h2>
+                    <p class="text-lg mb-8 text-slate-400 max-w-lg leading-relaxed">
+                        Research Assistant at University of Memphis specializing in Visual Question Answering systems and Large Language Models. 
+                        <span class="text-primary font-semibold">Published researcher at ACL 2025 with expertise in AI model evaluation and NLP.</span>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#projects" class="px-6 py-3 rounded-full btn-primary font-medium text-center">
+                            <i class="fas fa-rocket mr-2"></i>View My Work
+                        </a>
+                        <a href="assets/documents/resume.pdf" target="_blank" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition text-center">
+                            <i class="fas fa-download mr-2"></i>Download Resume
+                        </a>
+                    </div>
+                    
+                    <div class="flex mt-8 space-x-4">
+                        <a href="mailto:parizton41@gmail.com" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-500">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sudarshan-b-559060212" target="_blank" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Syudu41" target="_blank" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-purple-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:901-656-5345" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-green-500">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
+                    <!-- Circling beam effect -->
+                    <div class="absolute inset-0 rounded-full">
+                        <div class="circling-beam"></div>
+                    </div>
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary blur-xl opacity-20 floating"></div>
+                    <div class="relative w-full h-full rounded-full border-4 border-slate-800 ai-glow overflow-hidden">
+                        <img src="assets/images/profile.jpg" alt="Sudarshan Balaji" class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Current Work / News Section -->
+    <section id="news" class="py-6 bg-gradient-to-br from-slate-900 to-black border-b border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4"> <span class="gradient-text">Recent Updates</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-3">
+                    <div class="news-item p-3 rounded-lg border border-primary/20 bg-slate-800/40">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-briefcase text-primary mr-2"></i>
+                                <span class="text-primary font-semibold text-sm">Current Position</span>
+                            </div>
+                            <span class="text-slate-300 text-sm">Sr. Consultant at HeartLand Community Network</span>
+                        </div>
+                    </div>
+
+                    <div class="news-item p-3 rounded-lg border border-secondary/20 bg-slate-800/40">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-graduation-cap text-secondary mr-2"></i>
+                                <span class="text-secondary font-semibold text-sm">Research</span>
+                            </div>
+                            <span class="text-slate-300 text-sm">Research Assistant on ASTRA project with Carnegie Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="news-item p-3 rounded-lg border border-accent/20 bg-slate-800/40">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-trophy text-accent mr-2"></i>
+                                <span class="text-accent font-semibold text-sm">Publication</span>
+                            </div>
+                            <span class="text-slate-300 text-sm">VLM sensitivity analysis paper published at ACL 2025 GEM Workshop</span>
+                        </div>
+                    </div>
+
+                    <div class="news-item p-3 rounded-lg border border-green-400/20 bg-slate-800/40">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-code text-green-400 mr-2"></i>
+                                <span class="text-green-400 font-semibold text-sm">Development</span>
+                            </div>
+                            <span class="text-slate-300 text-sm">Building VQA systems processing COCO dataset with multiple LLMs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-start mb-16">
+                <div class="md:w-1/4 mb-8 md:mb-0 md:mr-6 flex justify-center">
+                    <div class="relative w-full max-w-64">
+                        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                        <div class="relative w-full rounded-2xl border-4 border-slate-800 bg-gradient-to-br from-slate-800 to-slate-900 p-4">
+                            <h4 class="text-lg font-bold text-center mb-4 text-cyan-400">Areas of Interest</h4>
+                            <div class="space-y-3">
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-chart-line text-green-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Data Analytics</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-brain text-purple-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Machine Learning</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-calculator text-blue-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Statistical Analysis</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-chart-bar text-orange-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Data Visualization</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-robot text-cyan-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">AI Agents</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-microchip text-red-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Large Language Models</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-comments text-pink-400 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Natural Language Processing</span>
+                                </div>
+                                <div class="interest-item flex items-center text-sm">
+                                    <i class="fas fa-spider text-purple-600 mr-3 text-lg"></i>
+                                    <span class="text-slate-200">Web Scraping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-3/4">
+                    <h3 class="text-2xl font-bold mb-6">Research-Driven Data Scientist with Published Work</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        MS Data Science graduate from University of Memphis with a perfect 4.0 GPA, currently serving as a Research Assistant 
+                        collaborating with Carnegie Learning and DataWhys on the "ASTRA" project for improving strategy analysis in educational contexts. 
+                        I also hold a BE in Electronics & Telecommunication Engineering from RV College of Engineering with 8.58/10.0 GPA.
+                    </p>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        My expertise spans Visual Question Answering systems, Large Language Models, and advanced machine learning techniques. 
+                        I've successfully engineered VQA systems processing COCO dataset images and benchmarked multiple LLMs including ChatGPT, 
+                        Gemini, and Claude for performance evaluation.
+                    </p>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        With hands-on experience at CharmHealth developing NLP services and synthetic medical record generation, 
+                        I bring both theoretical knowledge and practical implementation skills to every project. 
+                        My research has been accepted for publication at ACL 2025.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-semibold mb-2">Current Role: <span class="text-slate-300">Research Assistant</span></h4>
+                            <h4 class="font-semibold mb-2">MS GPA: <span class="text-green-400">4.0/4.0</span></h4>
+                            <h4 class="font-semibold mb-2">University: <span class="text-slate-300">University of Memphis</span></h4>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Specialization: <span class="text-slate-300">AI Research</span></h4>
+                            <h4 class="font-semibold mb-2">Published: <span class="text-primary">ACL 2025</span></h4>
+                            <h4 class="font-semibold mb-2">Location: <span class="text-slate-300">Memphis, TN</span></h4>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="assets/documents/resume.pdf" target="_blank" class="px-6 py-3 rounded-full btn-primary font-medium text-center">
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition text-center">
+                            <i class="fas fa-envelope mr-2"></i>Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Timeline -->
+            <div class="mt-20">
+                <h3 class="text-2xl font-bold mb-8 text-center">My <span class="gradient-text">Experience</span></h3>
+                
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+                    
+                    <!-- Sr. Consultant - Current -->
+                    <div class="mb-8 flex justify-between items-center w-full timeline-item">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg border border-primary/20">
+                            <div class="flex items-center mb-2">
+                                <span class="research-badge px-2 py-1 text-xs font-medium text-white rounded-full mr-2">Current</span>
+                                <span class="text-sm text-slate-400">Jul 22, 2024 - Present</span>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2 text-primary">Sr. Consultant</h4>
+                            <p class="text-sm text-slate-400 mb-2">HeartLand Community Network • Remote</p>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Currently serving as Senior Consultant providing strategic guidance and technical expertise.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Research Assistant - Current -->
+                    <div class="mb-8 flex justify-between items-center w-full timeline-item">
+                        <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg border border-secondary/20">
+                            <div class="flex items-center mb-2">
+                                <span class="research-badge px-2 py-1 text-xs font-medium text-white rounded-full mr-2">Current</span>
+                                <span class="text-sm text-slate-400">Jan 2025 - Present</span>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2 text-secondary">Research Assistant</h4>
+                            <p class="text-sm text-slate-400 mb-2">University of Memphis • Memphis, TN</p>
+                            <div class="text-slate-300 text-sm leading-relaxed space-y-2">
+                                <p>• Collaborated with Carnegie Learning and DataWhys under project "ASTRA" for improving strategy analysis in educational contexts under "Ratios and Proportion" topic</p>
+                                <p>• Engineered Visual Question Answering (VQA) system with LLM integration processing COCO dataset images and compared performance across ChatGPT, Gemini, and Claude</p>
+                                <p>• Communicated data-driven insights to collaborators, benchmarked LLMs on image-question tasks, and published technical paper accepted at ACL 2025</p>
+                            </div>
+                        </div>
+                        <div class="order-1 w-5/12"></div>
+                    </div>
+                    
+                    <!-- CharmHealth Intern -->
+                    <div class="mb-8 flex justify-between items-center w-full timeline-item">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg border border-slate-600">
+                            <div class="flex items-center mb-2">
+                                <span class="text-sm text-slate-400">Jun 2024 - Aug 2024</span>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2 text-accent">R&D Intern</h4>
+                            <p class="text-sm text-slate-400 mb-2">CharmHealth • Pleasanton, CA</p>
+                            <div class="text-slate-300 text-sm leading-relaxed space-y-2">
+                                <p>• Generated synthetic medical records using Synthea framework in FHIR format and developed Python pipeline for data conversion with optimized processing time</p>
+                                <p>• Engineered NLP services including Named Entity Recognition (NER) and Speech Diarization using NVIDIA RIVA</p>
+                                <p>• Used speech/text mining tools to uncover patterns in clinical conversations and implemented AI integration best practices addressing accessibility and user experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- RV College Research -->
+                    <div class="mb-8 flex justify-between items-center w-full timeline-item">
+                        <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg border border-slate-600">
+                            <div class="flex items-center mb-2">
+                                <span class="text-sm text-slate-400">Jan 2022 - Oct 2022</span>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2 text-primary">Research Intern</h4>
+                            <p class="text-sm text-slate-400 mb-2">RV College of Engineering • Bengaluru, India</p>
+                            <div class="text-slate-300 text-sm leading-relaxed space-y-2">
+                                <p>• Performed comprehensive literature survey on known vulnerabilities in GitHub Workflows and analyzed data to identify potential security vulnerabilities</p>
+                                <p>• Implemented Natural Language Processing algorithm to convert human-readable data to machine-readable format as part of preprocessing pipeline</p>
+                            </div>
+                        </div>
+                        <div class="order-1 w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400">Comprehensive expertise across the data science and AI technology stack</p>
+            </div>
+            
+            <!-- Unified Skills Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+                <!-- Programming Languages -->
+                <div class="skill-card group">
+                    <i class="fab fa-python text-4xl text-blue-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-database text-4xl text-blue-300 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-r-project text-4xl text-blue-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">R</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-calculator text-4xl text-orange-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">MATLAB</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">CSS</span>
+                </div>
+                
+                <!-- Data Science Libraries -->
+                <div class="skill-card group">
+                    <i class="fas fa-chart-bar text-4xl text-orange-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">NumPy</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-table text-4xl text-green-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Pandas</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-cube text-4xl text-teal-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Scikit-learn</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-chart-line text-4xl text-purple-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Matplotlib</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-language text-4xl text-pink-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">NLTK</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-link text-4xl text-cyan-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">LangChain</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-project-diagram text-4xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">LangGraph</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-bolt text-4xl text-yellow-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">PySpark</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-chart-area text-4xl text-purple-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">ggplot2</span>
+                </div>
+                
+                <!-- Machine Learning & AI -->
+                <div class="skill-card group">
+                    <i class="fas fa-brain text-4xl text-purple-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Machine Learning</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-robot text-4xl text-cyan-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Deep Learning</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-comments text-4xl text-green-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">NLP</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-microchip text-4xl text-red-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">LLMs</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-user-robot text-4xl text-teal-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">AI Agents</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-chart-area text-4xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">TensorFlow</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-fire text-4xl text-red-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">PyTorch</span>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div class="skill-card group">
+                    <i class="fas fa-terminal text-4xl text-gray-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Bash</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-chart-line text-4xl text-green-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Tableau</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-chart-pie text-4xl text-yellow-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Power BI</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-database text-4xl text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-leaf text-4xl text-green-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">MongoDB</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-git-alt text-4xl text-orange-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-github text-4xl text-gray-300 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">GitHub</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-docker text-4xl text-blue-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Docker</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-cloud text-4xl text-blue-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Cloud SQL</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fab fa-google text-4xl text-red-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">GCP</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-file-excel text-4xl text-green-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">MS Excel</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-code text-4xl text-green-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Jupyter</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-stream text-4xl text-amber-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Streamlit</span>
+                </div>
+                <div class="skill-card group">
+                    <i class="fas fa-spider text-4xl text-purple-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="skill-name">Web Scraping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: VQA System -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-brain text-6xl text-primary mb-2"></i>
+                            <span class="research-badge px-3 py-1 text-xs font-medium text-white rounded-full">ACL 2025</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Visual Question Answering Sensitivity Analysis</h3>
+                        <p class="text-slate-400 mb-4">
+                            Analyzed the sensitivity of Vision Language Models (VLMs) through Grice's cooperative principles, 
+                            testing GPT-4o, Claude-3.5-Sonnet, and Gemini-1.5-Flash on modified VQA v2.0 questions. Published at ACL 2025.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">Python</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">VLMs</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">Statistical Analysis</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: E-commerce DB -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-database text-6xl text-purple-400 mb-2"></i>
+                            <p class="text-xs text-slate-400">80K+ Products</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Database Design</h3>
+                        <p class="text-slate-400 mb-4">
+                            Designed comprehensive MySQL schema handling 80,000 products and 3000+ users with 30% performance improvement 
+                            through optimization.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">MySQL</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">MongoDB</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">Performance Optimization</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: SentimentSnap -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-500/20 to-teal-500/20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-chart-line text-6xl text-green-400 mb-2"></i>
+                            <p class="text-xs text-slate-400">92% Accuracy</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SentimentSnap</h3>
+                        <p class="text-slate-400 mb-4">
+                            NLP application for sentiment analysis using BERT and various LLM APIs. 
+                            Achieved 92% accuracy with secure authentication and scalable pipelines.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">Python</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">BERT</span>
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm font-mono">Streamlit</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary transition">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/Syudu41" target="_blank" class="px-8 py-3 rounded-full btn-primary font-medium inline-flex items-center">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Research <span class="gradient-text">Publications</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- ACL 2025 Publication -->
+                    <div class="publication-item p-4 rounded-lg border border-primary/30 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-primary font-semibold text-sm">2025 • ACL Workshop</span>
+                            <span class="bg-primary/20 text-primary px-2 py-1 text-xs rounded-full">Latest</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Analyzing the Sensitivity of Vision Language Models in Visual Question Answering
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">Fourth Workshop on Generation, Evaluation and Metrics (GEM²)</p>
+                        <a href="https://aclanthology.org/2025.gem-1.36/" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Paper
+                        </a>
+                    </div>
+
+                    <!-- 2023 IEEE Publication -->
+                    <div class="publication-item p-4 rounded-lg border border-slate-600 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-secondary font-semibold text-sm">2023 • IEEE</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Trends in Graphene-Based E-Skin and Artificial Intelligence for Biomedical Applications
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">IEEE Xplore Digital Library</p>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10184197" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Paper
+                        </a>
+                    </div>
+
+                    <!-- 2022 World Scientific -->
+                    <div class="publication-item p-4 rounded-lg border border-slate-600 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-accent font-semibold text-sm">2022 • World Scientific</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Kuttikara Equations in Mahaviracarya's Ganitasarasangraha
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">Mathematical Research Publication</p>
+                        <a href="https://www.worldscientific.com/worldscibooks/10.1142/12813#t=aboutBook" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Article
+                        </a>
+                    </div>
+
+                    <!-- 2022 ECS Transactions 1 -->
+                    <div class="publication-item p-4 rounded-lg border border-slate-600 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-secondary font-semibold text-sm">2022 • ECS Transactions</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Recent Advances in Nanomaterials Used for RFID Technology and Their Applications
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">Electrochemical Society</p>
+                        <a href="https://doi.org/10.1149/10701.12189ecst" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Paper
+                        </a>
+                    </div>
+
+                    <!-- 2022 ECS Transactions 2 -->
+                    <div class="publication-item p-4 rounded-lg border border-slate-600 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-secondary font-semibold text-sm">2022 • ECS Transactions</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Metal Oxide Based Electrochromic Materials: Recent Advances in Synthesis, Characterisation and Applications
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">Electrochemical Society</p>
+                        <a href="https://doi.org/10.1149/10701.18583ecst" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Paper
+                        </a>
+                    </div>
+
+                    <!-- 2021 IEEE -->
+                    <div class="publication-item p-4 rounded-lg border border-slate-600 bg-slate-800/30">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-accent font-semibold text-sm">2021 • IEEE</span>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-200 mb-2 leading-tight">
+                            Design of circularly polarized Square Patch Antenna Array on different substrates
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-2">IEEE Xplore Digital Library</p>
+                        <a href="https://ieeexplore.ieee.org/document/9587573" target="_blank" class="text-primary hover:text-secondary transition text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <p class="text-slate-400 mb-8">
+                        Feel free to reach out to me for any questions or opportunities. 
+                        I'm always open to discussing new projects, research collaborations, or opportunities in AI/ML and Data Science.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-slate-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Location</h4>
+                                <p class="text-slate-400">Memphis, Tennessee</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-slate-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="text-slate-400">parizton41@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-slate-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <p class="text-slate-400">901-656-5345</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-slate-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-briefcase text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Available For</h4>
+                                <p class="text-slate-400">Full-time positions, Research collaborations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Connect With Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="mailto:parizton41@gmail.com" class="social-icon w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-500">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/sudarshan-b-559060212" target="_blank" class="social-icon w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://github.com/Syudu41" target="_blank" class="social-icon w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-purple-600">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="tel:901-656-5345" class="social-icon w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-green-500">
+                                <i class="fas fa-phone text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                    <form class="space-y-6" id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block mb-2 font-medium">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg contact-input" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 font-medium">Your Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg contact-input" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 font-medium">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg contact-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input" required></textarea>
+                        </div>
+                        <button type="submit" class="px-8 py-3 rounded-full btn-primary font-medium w-full">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-3xl font-bold gradient-text font-print">Sudarshan.</a>
+                    <p class="text-slate-400 mt-2">© 2025 Sudarshan Balaji. All rights reserved.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="mailto:parizton41@gmail.com" class="text-slate-400 hover:text-primary transition">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sudarshan-b-559060212" target="_blank" class="text-slate-400 hover:text-blue-600 transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Syudu41" target="_blank" class="text-slate-400 hover:text-purple-600 transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="tel:901-656-5345" class="text-slate-400 hover:text-green-500 transition">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hidden hover:bg-secondary transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
